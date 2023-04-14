@@ -1,0 +1,159 @@
+{
+    "title": "Welcome to react using react-i18next",
+    "titles":{
+      "welcome": "Welcome!"
+    },
+    "button": {
+      "open": "Open",
+      "delete": "Delete"
+    },
+    "roles": {
+      "reader": "Viewer",
+      "author": "Creator",
+      "creator": "Editor"
+    },
+    "nav":{
+      "home": "Dashboards",
+      "logout": "Logout",
+      "help": "Help"
+    },
+    "popup":{
+      "create": "Dashboard Name",
+      "share": "Share Dashboard",
+      "delete": "Delete Dashboard",
+      "snapshot": "Snapshot Schedule",
+      "cloneWidget": "Widget Path",
+      "cloneDashboard": "Dashboard Path",
+      "confirm": "You sure you want to delete dashboard?"
+    },
+    "dashboard":{
+      "blank1": "BLANK DASHBOARD",
+      "blank2": "INSERT WIDGET TO START DISPLAYING"
+    },
+    "forms":{
+      "hint":{
+        "create": "Name",
+        "clone": "Path"
+      },
+      "error":{
+        "required": "Required",
+        "nameMinLength": "Can't Enter an Empty Name",
+        "nameMaxLength": "Maximum dashbord name is 50"
+      },
+      "button":{
+        "submit": "Create",
+        "back": "Back"
+      }
+    },
+    "labels":{
+      "new": "New",
+      "clone": "Import"
+    },
+    "statistics":{
+      "title":{
+        "KPI":"Data",
+        "KPI_short":"KPI",
+        "visualization":"Visualization",
+        "appearance":"Appearance",
+        "visualization_and_appearance":"Visualization and Appearance",
+        "filters": "Filters"
+      },
+      "filters":{
+        "global": "Filters on Dashboard",
+        "local": "Filters on Widget",
+        "date": "Date",
+        "recurrence": "Recurrence",
+        "15mins": "15 Minutes",
+        "hourly": "Hourly",
+        "daily": "Daily",
+        "start_date": "Start Date",
+        "end_date": "End Date"
+      },
+      "name":{
+        "calls_and_sms": "Calls and SMS",
+        "waiting_queue": "Waiting Queue",
+        "calendar": "Calendar",
+        "client_id": "Client"
+      },
+      "metric":{
+        "call_duration": "Call Duration",
+        "events": "Events",
+        "ring_time": "Ring Time",
+        "avg": "Average",
+        "min": "Minimum",
+        "max": "Maximum",
+        "call_transaction": "Call Transactions",
+        "moc": "Mobile Originating Call",
+        "mtc": "Mobile Terminating Call",
+        "mo": "Mobile Originating",
+        "mt": "Mobile Terminating",
+        "mor": "Mobile Originating Roaming",
+        "mtr": "Mobile Terminating Roaming",
+        "cf": "Call Forwarding",
+        "foc": "Fix Originating Call",
+        "cw": "Call Waiting",
+        "ch": "Call Hold",
+        "mp": "Multi Party",
+        "sms": "Short Message Service",
+        "ussd": "Unstructured Supplementary Service Data",
+        "ss": "Supplementary Service",
+        "cs": "Call Session",
+        "data": "Data",
+        "fax": "Fax",
+        "ss_notif": "Unstructured Supplementary Service Data",
+        "cs_video": "Call Session Video",
+        "data64k": "Data 64K",
+        "unknown": "Unknown",
+        "unkown": "Unknown",
+        "session": "Session",
+        "answered": "Session Answered",
+        "not_answered": "Session not Answered",
+        "location_type": "Location Type",
+        "inter_site": "Inter Site",
+        "external": "External",
+        "intra_site": "Intra Site",
+        "call_type": "Call Type",
+        "voice": "Voice",
+        "waiting_duration": "Waiting Duration",
+        "info3": "Status of Service",
+        "active": "Active",
+        "not_active": "Not Active",
+        "info4": "Call Answered",
+        "info5": "Status of Call",
+        "answered_or_canceled_origin":  "Call left because it was answered by destiation or canceled by origin",
+        "error": "Call left due to error",
+        "max_waiting_time": "Call left because max waiting time reached",
+        "queue_full": "Call left because the queue is full",
+        "user_exit": "Call left because user press Intercept exit option",
+        "info6": "Call Forwared",
+        "forwared": "Forwarded",
+        "not_forwared": "Not Forwarded",
+        "termination_side": "Termination Side",
+        "abc": "ABC",
+        "cti": "CTI",
+        "legid1": "LegId1",
+        "legid2": "LegId2",
+        "id": "Id",
+        "date": "Date",
+        "recurrence": "Recurrence"
+      },
+      "dimension":{
+        "waiting_queue_id": "Waiting Queue ID",
+        "access_id": "Access ID",
+        "node_id": "Node ID",
+        "terminal_id": "Terminal ID",
+        "user_id": "User ID",
+        "number": "Number"
+      }
+    },
+    "widget":{
+      "creation":{
+        "no_chart": "Select a Chart!",
+        "appearance": "Appearance",
+        "title": "Title",
+        "x_axis": "X Axis",
+        "y_axis": "Y Axis",
+        "color": "Color Range"
+      }
+    }
+  }
