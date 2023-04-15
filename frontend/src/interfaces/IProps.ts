@@ -9,6 +9,13 @@ export interface IPopUpCardProps {
     children: React.ReactNode
 }
 
+export interface IPopUpCardWithImageProps {
+    children: React.ReactNode
+    image: string
+    name: string
+    city: string
+}
+
 export interface PropsButton{
     title: string
     onClick: () => void
