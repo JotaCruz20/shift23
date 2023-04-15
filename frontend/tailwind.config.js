@@ -5,13 +5,13 @@ module.exports = {
     extend: {},
     colors :{
       white: 'rgb(var(--color-white) / <alpha-value>)',
-      background: 'var(--color-background)', 
-      secondaryColor: 'var(--color-secondary)',
-      frameColor: 'var(--color-frame)',
-      ternaryColor1: 'var(--color-ternary1)',
-      ternaryColor2: 'var(--color-ternary2)',
+      green1: 'var(--color-green1)', 
+      green2: 'var(--color-green2)',
+      yellow: 'var(--color-yellow)',
+      orange: 'var(--color-orange)',
+      beige: 'var(--color-beige)',
       error: 'var(--color-error)',
-      border: "#797979"
+      brown: 'var(--color-brown)'
     },
     fontFamily: {
       'montserrat': ['Montserrat'],

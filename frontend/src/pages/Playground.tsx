@@ -1,10 +1,11 @@
 import React from "react"
 
+import Navbar from "../components/Navbar"
 
 const Playground = () => {
     
     return(
-        <h1>USAR PARA TESTAR</h1>
+        <Navbar />
     )
 }
 

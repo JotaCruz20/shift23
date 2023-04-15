@@ -14,7 +14,7 @@ const MainLayout = ({ children, title }: MainProps) => {
     const theme = useTheme()
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'))
     return(
-        <div className={`fixed h-full w-full bg-white select-none`}>
+        <div className={`fixed h-full w-full select-none`}>
             <div>
                 {children}
             </div>

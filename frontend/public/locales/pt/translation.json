@@ -1,3 +1,10 @@
 {
-    "login": "Bem vindo!"
+    "login": "Bem vindo!",
+    "navbar":{
+        "app_name": "HORTELÃ",
+        "buy": "Comprar",
+        "about": "Sobre Nós",
+        "contact": "Contatos"
+    }
+    
 }
