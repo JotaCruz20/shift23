@@ -10,7 +10,7 @@ const MainLayout = ({ children, title }: MainProps) => {
     const { t } = useTranslation()
     
     return(
-        <div className={`fixed h-full w-full select-none`}>
+        <div className={`fixed h-full w-full bg-green1 select-none`}>
             <div>
                 {children}
             </div>

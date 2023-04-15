@@ -11,7 +11,9 @@ module.exports = {
       orange: 'var(--color-orange)',
       beige: 'var(--color-beige)',
       error: 'var(--color-error)',
-      brown: 'var(--color-brown)'
+      brown: 'var(--color-brown)',
+      grey: 'var(--color-grey)',
+      hint: 'var(--color-hint)',
     },
     fontFamily: {
       'montserrat': ['Montserrat'],
@@ -37,7 +39,7 @@ module.exports = {
       pattern: /(w|h|px)-[0-9]+/
     },
     {
-      pattern: /bg-(white|blue|secondaryColor|frameColor|background|ternaryColor1|ternaryColor2|error|border)+/,
+      pattern: /bg-(white|blue|secondaryColor|frameColor|background|ternaryColor1|ternaryColor2|error|border|grey)+/,
       variants: ['lg', 'hover', 'focus', 'lg:hover', 'scrollbar'],
     }
 
