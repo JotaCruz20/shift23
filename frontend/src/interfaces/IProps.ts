@@ -23,3 +23,36 @@ export interface CardProps{
     discount: number
     unit: string
 }
+
+export interface ProdInfoProps{
+    title: string
+    price: number
+    weight: number 
+    producerName: string
+    producerImage: string
+    productImage: string
+    unit: string
+}
+
+export interface ProdTopProps{
+    image: string
+}
+export interface ProdBottomProps{
+    title: string
+    unit: string
+    price: number
+    weight: number
+    producerName: string
+    producerImage: string
+}
+
+export interface ProdUnitProps{
+    weight: number
+    unit: string
+    price: number
+}
+
+export interface ProducerInfoProps{
+    name: string
+    image: string
+}
