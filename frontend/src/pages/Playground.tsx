@@ -11,6 +11,7 @@ import "swiper/css/navigation"
 import { Navigation, Pagination } from "swiper";
 
 const Playground = () => {
+    //TODO: Make this a component
     return(
         <>
             <Swiper
