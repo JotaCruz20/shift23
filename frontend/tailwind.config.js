@@ -17,7 +17,7 @@ module.exports = {
     },
     fontFamily: {
       'montserrat': ['Montserrat'],
-      'vidaloka': ['Vidaloka'],
+      'dmsans': ['DM Sans'],
     },
   },
   plugins: [

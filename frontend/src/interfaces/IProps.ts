@@ -9,6 +9,13 @@ export interface IPopUpCardProps {
     children: React.ReactNode
 }
 
+export interface IPopUpCardWithImageProps {
+    children: React.ReactNode
+    image: string
+    name: string
+    city: string
+}
+
 export interface PropsButton{
     title: string
     onClick: () => void
@@ -20,7 +27,7 @@ export interface CardProps{
     title: string
     image: string
     price: number
-    discount: number
+    producer: string
     unit: string
 }
 
@@ -53,6 +60,6 @@ export interface ProdUnitProps{
 }
 
 export interface ProducerInfoProps{
-    name: string
     image: string
+    name?: string
 }

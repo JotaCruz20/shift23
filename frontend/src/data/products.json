@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Banana",
+    "image": "http://clipart-library.com/image_gallery2/Banana.png",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG"
+  },
+  {
+    "title": "Banana",
+    "image": "http://clipart-library.com/image_gallery2/Banana.png",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG",
+    "name": "Arménio"
+  },
+  {
+    "title": "Banana",
+    "image": "http://clipart-library.com/image_gallery2/Banana.png",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG",
+    "name": "Arménio"
+  },
+  {
+    "title": "Banana",
+    "image": "http://clipart-library.com/image_gallery2/Banana.png",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG",
+    "name": "Arménio"
+  }
+]
