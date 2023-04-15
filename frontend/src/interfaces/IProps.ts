@@ -29,6 +29,7 @@ export interface CardProps{
     price: number
     producer: string
     unit: string
+    name?: string
 }
 
 export interface ProdInfoProps{
@@ -61,5 +62,5 @@ export interface ProdUnitProps{
 
 export interface ProducerInfoProps{
     image: string
-    name?: string
+    name: string
 }

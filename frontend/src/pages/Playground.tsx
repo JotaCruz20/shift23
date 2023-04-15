@@ -3,18 +3,6 @@ import BackButton from "../components/BackButton"
 import ProdPage from "./ProdInfo"
 import ProdBottom from "../components/ProdBottom"
 
-<<<<<<< HEAD
-=======
-import Card from "../components/Card"
-import { Swiper, SwiperSlide } from "swiper/react";
-import products from "../data/products.json"
-import "swiper/css"
-import "swiper/css/pagination"
-import "swiper/css/navigation"
-
-// import required modules
-import { Navigation, Pagination } from "swiper";
->>>>>>> refs/remotes/origin/main
 
 const Playground = () => {
     //TODO: Make this a component
