@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Banana",
+    "image": "http://www.vegkitchen.com/wp-content/uploads/2010/03/banana.jpg",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG"
+  },
+  {
+    "title": "Banana",
+    "image": "http://www.vegkitchen.com/wp-content/uploads/2010/03/banana.jpg",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG"
+  },
+  {
+    "title": "Banana",
+    "image": "http://www.vegkitchen.com/wp-content/uploads/2010/03/banana.jpg",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG"
+  },
+  {
+    "title": "Banana",
+    "image": "http://www.vegkitchen.com/wp-content/uploads/2010/03/banana.jpg",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG"
+  }
+]
