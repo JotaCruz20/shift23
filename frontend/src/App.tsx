@@ -1,4 +1,6 @@
 import React, { Suspense} from 'react'
+import logo from './logo.svg';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { ProtectedRoute } from './middleware/ProtectedRoute'
@@ -8,8 +10,8 @@ import routes from './routes/routes'
 import './assets/css/tailwind.scss'
 
 function App() {
-
   return (
+    <div className="App">
       <BrowserRouter>
         <Routes>
           {routes.map((route, index) => {
@@ -28,7 +30,8 @@ function App() {
           })}
         </Routes>
     </BrowserRouter>
-  )
+    </div>
+  );
 }
 
 function WrappedApp() {
@@ -42,3 +45,4 @@ function WrappedApp() {
 }
 
 export default WrappedApp
+
