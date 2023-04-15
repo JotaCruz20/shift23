@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root{
+    --color-white: 255 255 255;
+    --color-background: #D9D9D9;
+    --color-secondary: #0084D6;
+    --color-frame: #000000;
+    --color-ternary1: #0084D6;
+    --color-ternary2: #FF7F32;
+    --color-error: #D6001A;
+  }
+}

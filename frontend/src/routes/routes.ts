@@ -2,10 +2,8 @@ import React from "react"
 
 import MainLayout from "../layouts/MainLayout"
 
-import HomeScreen from "../pages/HomeScreen"
-import LoginPage from "../pages/LoginPage"
-import Dashboard from "../pages/Dashboard"
-import NotFound from "../pages/NotFound"
+import Login from "../pages/Login"
+import Playground from "../pages/Playground"
 
 interface IRoutes  {
     path: string
@@ -20,31 +18,16 @@ const Routes: IRoutes[] = [
         path: "/login",
         name: "welcome",
         layout: MainLayout, //TODO: Criar layout para a página de login
-        component: LoginPage,
+        component: Login,
         protected: false
     },
     {
-        path: "/",
+        path: "/playground",
         name: "welcome",
-        layout: MainLayout,
-        component: HomeScreen,
-        protected: true
-    },
-    {
-        path: "/dashboard/:dashboardId",
-        name: "dashboard",
-        layout: MainLayout,
-        component: Dashboard,
-        protected: true
-    },
-    {
-        path: "*",
-        name: "dashboard",
-        layout: MainLayout,
-        component: NotFound,
-        protected: true
-    },
-
+        layout: MainLayout, //TODO: Criar layout para a página de login
+        component: Playground,
+        protected: false
+    }
 ]
 
 export default Routes
