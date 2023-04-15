@@ -14,7 +14,8 @@ module.exports = {
       border: "#797979"
     },
     fontFamily: {
-      'montserrat': ['Montserrat']
+      'montserrat': ['Montserrat'],
+      'vidaloka': ['Vidaloka'],
     },
   },
   plugins: [

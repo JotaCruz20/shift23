@@ -9,7 +9,7 @@ const Login = () => {
     const { t } = useTranslation()
     
     return(
-        <h1>{t(`login`)}</h1>
+        <h1 className='font-vidaloka'>{t(`login`)}</h1>
     )
 }
 
