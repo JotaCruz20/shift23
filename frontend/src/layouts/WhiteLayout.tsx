@@ -6,11 +6,11 @@ import { getCookie } from '../util/cookies'
 
 import { MainProps } from '../interfaces/IProps'
 
-const MainLayout = ({ children, title }: MainProps) => {
+const WhiteLayout = ({ children, title }: MainProps) => {
     const { t } = useTranslation()
     
     return(
-        <div className={`fixed h-full w-full bg-green1 select-none font-dmsans`}>
+        <div className={`fixed h-full w-full bg-white select-none font-dmsans`}>
             <div>
                 {children}
             </div>
@@ -18,4 +18,4 @@ const MainLayout = ({ children, title }: MainProps) => {
     )
 }
 
-export default MainLayout
+export default WhiteLayout

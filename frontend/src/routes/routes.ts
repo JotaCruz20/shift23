@@ -6,11 +6,12 @@ import Playground from "../pages/Playground"
 import SplashScreen from "../pages/SplashScreen"
 import WelcomeScreen from "../pages/WelcomeScreen"
 import Register from "../pages/Register"
+import HomeScreen from "../pages/HomeScreen"
+import WhiteLayout from "../layouts/WhiteLayout"
 
 
 interface IRoutes  {
     path: string
-    name: string
     layout: React.ComponentType<any>
     component: React.ComponentType<any>
     protected: boolean
@@ -19,31 +20,33 @@ interface IRoutes  {
 const Routes: IRoutes[] = [
     {
         path: "/",
-        name: "welcome",
-        layout: MainLayout, //TODO: Criar layout para a página de login
+        layout: MainLayout, 
         component: SplashScreen,
         protected: false
     },
     {
         path: "/welcome",
-        name: "welcome",
-        layout: MainLayout, //TODO: Criar layout para a página de login
+        layout: MainLayout,
         component: WelcomeScreen,
         protected: false
     },
     {
         path: "/register",
-        name: "register",
-        layout: MainLayout, //TODO: Criar layout para a página de login
+        layout: MainLayout, 
         component: Register,
         protected: false
     },
     {
         path: "/playground",
-        name: "welcome",
-        layout: MainLayout, //TODO: Criar layout para a página de login
+        layout: MainLayout, 
         component: Playground,
         protected: false
+    },
+    {
+        path: "/home",
+        layout: WhiteLayout,
+        component: HomeScreen,
+        protected: false //TODO: MUDAR PARA TRUE
     }
 ]
 

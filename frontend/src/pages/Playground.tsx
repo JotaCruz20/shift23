@@ -1,23 +1,48 @@
 import React from "react"
 
-import Navbar from "../components/Navbar"
-import PopupCard from "../components/PopupCard"
-import BackButton from "../components/BackButton"
+import Card from "../components/Card"
+import { Swiper, SwiperSlide } from "swiper/react";
+import products from "../data/products.json"
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
 
-
+// import required modules
+import { Navigation, Pagination } from "swiper";
 
 const Playground = () => {
-    
+    //TODO: Make this a component
     return(
-        <div>
-            <div className="fixed top-0 left-0 z-10">
-                <BackButton />
-            </div>
-            <PopupCard>
-                <h1>teste</h1>
-            </PopupCard>
-        </div>
-    )
+        <>
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={5}
+                loop={false} 
+                pagination={false}
+                modules={[Navigation, Pagination]}
+                className="flex justify-center ml-2"
+            >
+            {
+                products.map((product, index) => {
+                    return(
+                        <SwiperSlide key={index}>
+                            <Card
+                                title={product.title}
+                                producer={product.producer_name}
+                                unit={product.unit}
+                                price={product.price}
+                                image={product.image}
+                                name={product.name}
+                            />
+                        </SwiperSlide>
+                    )
+                })
+            }
+            </Swiper>
+        </>
+    )   
+   
 }
+
 
 export default Playground

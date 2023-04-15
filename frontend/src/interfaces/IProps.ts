@@ -27,6 +27,7 @@ export interface CardProps{
     title: string
     image: string
     price: number
-    discount: number
+    producer: string
     unit: string
+    name?: string
 }

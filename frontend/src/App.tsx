@@ -20,7 +20,7 @@ function App() {
                 key={index}
                 path={route.path}
                 element={
-                <route.layout title={route.name}>
+                <route.layout>
                   {route.protected && <ProtectedRoute> <route.component/> </ProtectedRoute>}
                   {!route.protected && <route.component/>}
                 </route.layout>
