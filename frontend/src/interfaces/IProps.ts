@@ -70,13 +70,29 @@ export interface ProdUnitProps{
 
 export interface ProducerInfoProps{
     image: string
-    name?: string
+    name: string
+}
+export interface ProducerPageProps{
+    name: string
+}
+
+export interface ProdTypeListProp{
+    list: any[]
+}
+
+export interface ProdGridProps{
+    list: any[]
+}
+export interface ProdTypeButtonProps{
+    name:string
 }
 
 export interface ISliderProps{
     items: any[]
 }
-
+export interface ICartProviderProps {
+    children: React.ReactNode
+}
 export interface CartContextProps {
     state: CartState;
     addItem: (item: CartItem) => void;
@@ -86,6 +102,22 @@ export interface CartContextProps {
     dispatch: React.Dispatch<Action>;
   }
 
-export interface ICartProviderProps {
-    children: React.ReactNode
+export interface VendorRequestProps{
+    saleHistory: any[]
+}
+
+export interface VendorHistoryCardProps{
+    customer: string
+    order_nr: number
+    status: string
+    products: any[]
+    total: number
+}
+
+export interface HistorySliderCardProps{
+    image: string
+    weight: number
+}
+export interface VendorHistorySliderProps{
+    products: any[]
 }

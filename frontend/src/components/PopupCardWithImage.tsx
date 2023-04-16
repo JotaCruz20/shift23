@@ -13,14 +13,14 @@ const PopupCardWithImage = ({ children, image, name, city }: IPopUpCardWithImage
                 <div className="flex flex-row w-screen">
                 <img
                     className="absolute rounded-full -top-12 w-[100px] h-[100px] object-cover"
-                    src="https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    src={image}
                     alt="test"
                 />
                 <div className="flex flex-col w-screen ml-[120px]">
-                    <h1 className=' text-[20px] ml-[4px]'>{name}</h1>
-                    <div className='flex flex-row'>
+                    <h1 className=' text-[40px] ml-[4px]'>{name}</h1>
+                    <div className='flex flex-row pb-4'>
                         <HiLocationMarker className="inline-block text-[20px]"/>
-                        <h1>{city}</h1>
+                        <h1 className='text-[15px]'>{city}</h1>
                     </div>
                     
                 </div>
