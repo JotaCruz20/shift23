@@ -7,7 +7,8 @@ import BackButton from "./BackButton";
 import { AiOutlineSearch } from "react-icons/ai";
 import ProdTypeList from "./ProdTypeList";
 import ProdGrid from "./ProdGrid";
-import products from "../data/products.json"
+
+import { api } from "../util/api";
 
 //TODO: Fix import
 //TODO: Fix Prog Grid Icon (porque estou a importar a mesma card do Market
@@ -15,15 +16,34 @@ const VendorAdvertisementLayout = () => {
 
     const [searchInput, setSearchInput] = useState<string>("")
 
-    const categories = ['Legumes', 'Frutas', 'Ovos'] //TODO: Ir buscar a api
+    const [categories, setCategories] = useState<any>([])
 
+    const [products, setProducts] = useState<any>([])
     const [selected, setSelected] = useState(0);
 
     const [allProducts, setAllProducts] = useState(products);
     const [visibleProducts, setVisibleProducts] = useState(products);
 
+    // get producer info
     useEffect(() => {
-        setVisibleProducts(allProducts.filter((product) => product.category === categories[selected]))
+        async function getProducts() {
+            let categories = await api.get('categories')
+
+            setCategories(categories)
+
+            let products = await api.get(`seller/1/sales`)
+
+            setAllProducts(products)
+            setVisibleProducts(products.filter((product:any) => product.category === categories[0]))
+
+        }
+        getProducts()
+    }, [])
+
+    
+
+    useEffect(() => {
+        //setVisibleProducts(allProducts.filter((product) => product.category === categories[selected]))
     }, [selected])
 
 
@@ -42,7 +62,7 @@ const VendorAdvertisementLayout = () => {
             }))
         }
         else {
-            setVisibleProducts(allProducts.filter((product) => product.category === categories[selected]))
+            setVisibleProducts(visibleProducts.filter((product:any) => product.category === categories[selected]))
         }
     }
 

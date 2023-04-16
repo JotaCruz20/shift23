@@ -45,7 +45,7 @@
             },
             {
                 "id": 2,
-                "name": "Perâ",
+                "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
                 "quantity": 2,
                 "unit": "kg"
@@ -53,14 +53,14 @@
             {
                 "id": 3,
                 "name": "Abacaxi",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
+                "image": "https://img.freepik.com/fotos-gratis/abacaxi-suculento-maduro-isolado-no-branco_179666-678.jpg?w=740&t=st=1681658014~exp=1681658614~hmac=25001c3d3a48fe2af495948f974c8a0f8dea37687230ac3e9db89010a1ae3cdf",
                 "quantity": 3,
                 "unit": "kg"
             },
             {
                 "id": 4,
                 "name": "Coco",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
+                "image": "https://www.pngimages.in/uploads/png-webp/2022/2022-September/Coconut_Hd.webp",
                 "quantity": 4,
                 "unit": "kg"
             }

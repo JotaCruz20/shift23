@@ -4,16 +4,18 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import Button from "./Button";
 
+import { useNavigate } from "react-router-dom";
 
 const VendorNewLayout = () => {
+    const navigate = useNavigate();
     const categories = ['Legumes', 'Frutas', 'Ovos'] //TODO: Ir buscar a api
     const unit = ["UN", "KG"]
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
 
     return (
         <div className="flex">
-            <form onSubmit={handleSubmit((data) => console.log(data))}>
+            <form onSubmit={handleSubmit((data) => reset())}>
                 <p className="mt-6">Adicione uma fotografia do produto</p>
                 <input type="file" className="text-sm text-white px-24
                 file:mr-5 file:py-2 file:px-6
