@@ -6,7 +6,7 @@ import SliderCard from "./SliderCard";
  
 const ProdGrid = ({list}: ProdGridProps) => {
     return (
-        <div className="grid grid-cols-4 overflow-y-scroll h-80">
+        <div className="grid grid-cols-4">
             {list.map((item) => (
                 <div >
                 <SliderCard

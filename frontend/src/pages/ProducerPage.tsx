@@ -9,6 +9,7 @@ import ProdTypeList from "../components/ProdTypeList";
 import ProdGrid from "../components/ProdGrid";
 import products from "../data/products.json"
 
+//TODO: Fix import
 const ProducerPage = ({name}: ProducerPageProps) => {
     return(
         <div>
@@ -26,9 +27,10 @@ const ProducerPage = ({name}: ProducerPageProps) => {
             </div>
 
             <ProdTypeList list={['Legumes', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos']}/>
-            <ProdGrid list={products} />
-
-
+            <div className='h-[500px] overflow-y-auto' >
+                <ProdGrid list={products} />
+            </div>
+            
             </PopupCardWithImage>
         </div>
 
