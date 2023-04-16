@@ -27,7 +27,6 @@ export interface CardProps{
     title: string
     image: string
     price: number
-    producer: string
     unit: string
     name?: string
 }
@@ -63,4 +62,18 @@ export interface ProdUnitProps{
 export interface ProducerInfoProps{
     image: string
     name: string
+}
+export interface ProducerPageProps{
+    name: string
+}
+
+export interface ProdTypeListProp{
+    list: any[]
+}
+
+export interface ProdGridProps{
+    list: any[]
+}
+export interface ProdTypeButtonProps{
+    name:string
 }

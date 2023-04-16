@@ -9,14 +9,13 @@ import { ProdInfoProps } from '../interfaces/IProps';
 const ProdPage = ({ title, price, weight, unit, producerName, producerImage, productImage }: ProdInfoProps) => {
         return (
            <div>
-                <ProdTop image={productImage}></ProdTop>
-            <ProdBottom 
-                title={title} unit={unit} price={price} weight={weight} producerImage={producerImage} producerName={producerName}/>
+                <ProdTop 
+                    image={productImage}></ProdTop>
+                <ProdBottom 
+                    title={title} unit={unit} price={price} weight={weight} producerImage={producerImage} producerName={producerName}/>
             </div>
            
-            
-
-
+        
         )
 
 
