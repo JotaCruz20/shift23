@@ -11,7 +11,7 @@ import products from "../data/products.json"
 
 //TODO: Fix import
 //TODO: Fix Prog Grid Icon (porque estou a importar a mesma card do Market
-const AdvertisementLayout = () => {
+const VendorAdvertisementLayout = () => {
     return(
         <div>
             <div className="relative w-[90%] p-4">
@@ -32,4 +32,4 @@ const AdvertisementLayout = () => {
     )
 }
 
-export default AdvertisementLayout
+export default VendorAdvertisementLayout

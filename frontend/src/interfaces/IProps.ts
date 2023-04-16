@@ -94,7 +94,7 @@ export interface CartContextProps {
     items: CartItem[]
 }
 
-export interface VendorHistoryProps{
+export interface VendorRequestProps{
     saleHistory: any[]
 }
 

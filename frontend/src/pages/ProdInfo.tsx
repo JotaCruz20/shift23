@@ -14,7 +14,6 @@ const ProdPage = ({ title, price, weight, unit, producerName, producerImage, pro
                 <ProdBottom 
                     title={title} unit={unit} price={price} weight={weight} producerImage={producerImage} producerName={producerName}/>
             </div>
-           
         
         )
 
