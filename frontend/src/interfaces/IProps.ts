@@ -93,3 +93,23 @@ export interface CartContextProps {
     updateQuantity: (itemId: string, quantity: number) => void
     items: CartItem[]
 }
+
+export interface VendorHistoryProps{
+    saleHistory: any[]
+}
+
+export interface VendorHistoryCardProps{
+    customer: string
+    order_nr: number
+    status: string
+    products: any[]
+    total: number
+}
+
+export interface HistorySliderCardProps{
+    image: string
+    weight: number
+}
+export interface VendorHistorySliderProps{
+    products: any[]
+}

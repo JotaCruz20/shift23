@@ -5,7 +5,7 @@ import ProdTypeButton from "./ProdTypeButton";
 
 const ProdTypeList = ({list}: ProdTypeListProp) => {
     return (
-        <div className="flex flex-row gap-2 overflow-x-auto">
+        <div className="flex flex-row gap-2 overflow-x-auto p-2 justify-center">
             {
             list.map((item) => <ProdTypeButton name={item}/>)
             }
