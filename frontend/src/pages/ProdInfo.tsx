@@ -3,7 +3,7 @@ import ProdTop from "../components/ProdTop";
 import ProdBottom from "../components/ProdBottom";
 import PopupCard from "../components/PopupCard";
 import BackButton from "../components/BackButton";
-import Card from "../components/card";
+import Card from "../components/SliderCard";
 
 
 import { ProdInfoProps } from '../interfaces/IProps';
