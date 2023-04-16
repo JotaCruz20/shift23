@@ -44,6 +44,12 @@ const cartReducer = (state: CartState, action: Action) => {
           item.id === action.payload.id ? { ...item, quantity: action.payload.quantity } : item
         ),
       };
+    case 'SET_ITEMS':
+      console.log(action.payload)
+      return {
+        ...state,
+        items: action.payload,
+      };
     default:
       return state;
   }
@@ -57,16 +63,15 @@ const CartProvider = ({ children }: ICartProviderProps) => {
     const cartData = localStorage.getItem('cart');
     if (cartData) {
       const items = JSON.parse(cartData);
-      dispatch({ type: 'SET_ITEMS', payload: items });
-      
+      if(items.length > 0){
+        dispatch({ type: 'SET_ITEMS', payload: items });
+      }
     }
   }, []);
 
   // Save cart data to localStorage whenever it changes
   useEffect(() => {
-    if(state.items.length !== 0) {
       localStorage.setItem('cart', JSON.stringify(state.items));
-    }
   }, [state.items]); 
 
   const addItem = (item: CartItem) => dispatch({ type: 'ADD_ITEM', payload: item });

@@ -10,22 +10,26 @@
             {
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 1
+                "quantity": 1,
+                "unit": "kg"
             },
             {
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 2
+                "quantity": 2,
+                "unit": "kg"
             },
             {
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 3
+                "quantity": 3,
+                "unit": "kg"
             },
             {
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 4
+                "quantity": 4,
+                "unit": "kg"
             }
 
         ]
@@ -40,24 +44,32 @@
         "day": "Hoje",
         "prod_list": [
             {
+                "id": 1,
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 1
+                "quantity": 1,
+                "unit": "kg"
             },
             {
+                "id": 2,
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 2
+                "quantity": 2,
+                "unit": "kg"
             },
             {
+                "id": 3,
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 3
+                "quantity": 3,
+                "unit": "kg"
             },
             {
+                "id": 4,
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 4
+                "quantity": 4,
+                "unit": "kg"
             }
 
         ]
@@ -72,24 +84,32 @@
         "day": "Hoje",
         "prod_list": [
             {
+                "id": 1,
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 1
+                "quantity": 1,
+                "unit": "kg"
             },
             {
+                "id": 2,
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 2
+                "quantity": 2,
+                "unit": "kg"
             },
             {
+                "id": 3,
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 3
+                "quantity": 3,
+                "unit": "kg"
             },
             {
+                "id": 4,
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 4
+                "quantity": 4,
+                "unit": "kg"
             }
 
         ]
@@ -106,22 +126,26 @@
             {
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 1
+                "quantity": 1,
+                "unit": "kg"
             },
             {
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 2
+                "quantity": 2,
+                "unit": "kg"
             },
             {
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 3
+                "quantity": 3,
+                "unit": "kg"
             },
             {
                 "name": "Banana",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "weight": 4
+                "quantity": 4,
+                "unit": "kg"
             }
 
         ]

@@ -11,6 +11,9 @@ import products from "../data/products.json"
 
 //TODO: Fix import
 const ProducerPage = ({name}: ProducerPageProps) => {
+
+    const [selected, setSelected] = React.useState(0);
+
     return(
         <div>
             <div className="fixed top-5 left-5 z-10">
@@ -26,7 +29,7 @@ const ProducerPage = ({name}: ProducerPageProps) => {
                                 </div>
             </div>
 
-            <ProdTypeList list={['Legumes', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos']}/>
+            <ProdTypeList list={['Legumes', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos']} selected={selected} onClick={(index: number) => setSelected(index)}/>
             <div className='h-[500px] overflow-y-auto' >
                 <ProdGrid list={products} />
             </div>

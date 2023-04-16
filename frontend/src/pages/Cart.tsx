@@ -2,6 +2,8 @@ import React from "react";
 import PopupCard from "../components/PopupCard";
 import BackButton from "../components/BackButton";
 
+import { useNavigate } from "react-router";
+
 import { useCart } from "../context/CartContext";
 import Slider from "../components/Slider";
 import SliderCart from "../components/SliderCart";
@@ -10,8 +12,11 @@ import { IoMdTrash } from "react-icons/io";
 import Button from "../components/Button";
 
 const Cart = () => {
-    let itemsString = localStorage.getItem('cart');
-    let itemsArray = JSON.parse(itemsString!);
+    const { removeItem } = useCart();
+    const navigator = useNavigate();
+
+    let itemsString = localStorage.getItem('cart')
+    let itemsArray = JSON.parse(itemsString!)
 
     console.log(itemsArray)
 
@@ -34,6 +39,14 @@ const Cart = () => {
         return total
     }
 
+    function makeOrder(item:any[]) {
+        for(let i = 0; i < item.length; i++) {
+            removeItem(item[i].id)
+        }
+        //TODO: send order to backend
+        navigator('/after-request')
+    }
+
 
     return (
         <div>
@@ -46,7 +59,7 @@ const Cart = () => {
             
             <PopupCard>
                     {groupedItems.map((item: any, index:number) => (
-                        <div className="bg-white rounded-lg border-white shadow-md w-[95%] mb-2">
+                        <div key={index} className="bg-white rounded-lg border-white shadow-md w-[95%] mb-2">
                             <div className="flex flex-row justify-between">
                                 <div>
                                     <h1 className="ml-2 text-[20px] font-bold">{item[0].producerName}</h1>
@@ -62,7 +75,7 @@ const Cart = () => {
                                 <h1 className="ml-2 font-bold">Total: {calculateTotal(item)}€</h1>
                                 </div>
                                 <div className="w-[100px]">
-                                    <Button title="Pedido" onClick={() => (console.log("pedido"))} type="button" disabled={false}/>
+                                    <Button title="Pedido" onClick={() => makeOrder(item)} type="button" disabled={false}/>
                                 </div>
                             </div>
                             

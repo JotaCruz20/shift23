@@ -22,6 +22,7 @@ export interface PropsButton{
     onClick: () => void
     type: "button" | "submit" | "reset" | undefined
     disabled: boolean
+    white?: boolean
 }
 
 export interface CardProps{
@@ -31,6 +32,7 @@ export interface CardProps{
     price: number
     unit: string
     name?: string
+    isProducer?: boolean
 }
 
 export interface SlideCardProps{
@@ -78,6 +80,8 @@ export interface ProducerPageProps{
 
 export interface ProdTypeListProp{
     list: any[]
+    selected: number
+    onClick: (index: number) => void
 }
 
 export interface ProdGridProps{
@@ -85,6 +89,7 @@ export interface ProdGridProps{
 }
 export interface ProdTypeButtonProps{
     name:string
+    selected: boolean
 }
 
 export interface ISliderProps{
@@ -120,4 +125,8 @@ export interface HistorySliderCardProps{
 }
 export interface VendorHistorySliderProps{
     products: any[]
+}
+
+export interface IAfterRequestProps{
+    id: number
 }

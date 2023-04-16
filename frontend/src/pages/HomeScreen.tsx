@@ -50,7 +50,7 @@ const HomeScreen = () => {
   return (
     <div>
       <div className="flex justify-center h-full">
-        <div className="inline-flex bg-green1 px-2 rounded-lg mx-auto mt-5">
+        <div className="inline-flex bg-green2 px-2 rounded-lg mx-auto mt-5">
           <div className="flex flex-row">
             <HiLocationMarker className="mb-[3px] h-6 w-6"/>
             <h1 className="text-[16px] font-bold">Coimbra</h1>
@@ -59,23 +59,23 @@ const HomeScreen = () => {
       </div>
       <div className="flex flex-row justify-between mt-8 items-center">
         <div className="flex flex-col ml-8">
-          <div className="flex rounded-full items-center justify-center h-7 w-7 bg-orange">
-            <BsFillPersonFill className="mb-[3px] h-6 w-6"/>
+          <div className="flex rounded-full items-center justify-center h-7 w-7 bg-grey">
+            <BsFillPersonFill className="mb-[3px] h-6 w-6 fill-green2"/>
           </div>
           <p className="text-[12px]">Perfil</p>
         </div>
         <p className="text-[20px]">Bem Vindo de Volta</p>
         <div className="flex flex-col mr-8 items-center">
-          <div className="flex rounded-full items-center justify-center h-7 w-7 bg-orange" onClick={() => navigate("/cart")}>
-            <RiShoppingBasketLine className="mb-[3px] h-6 w-6"/>
+          <div className="flex rounded-full items-center justify-center h-7 w-7 bg-grey" onClick={() => navigate("/cart")}>
+            <RiShoppingBasketLine className="mb-[3px] h-6 w-6 fill-green2"/>
           </div>
           <p className="text-[12px] ">Cesto</p>
         </div>
       </div>
       <div className="flex justify-center h-full">
         <div className="inline-flex px-2 rounded-lg mx-auto mt-5">
-          <div className="relative w-[90%] mt-[10%]">
-              <input type="text" placeholder="Search ..." onChange={handleChange} value={searchInput} className="bg-background shadow-lg rounded-full pl-10 pr-4 py-2 w-full focus:outline-none cursor-text" />
+          <div className="relative w-[300px] mt-[10%]">
+              <input type="text" placeholder="Procura pelo que gostas" onChange={handleChange} value={searchInput} className="bg-grey shadow-lg rounded-xl pl-10 pr-4 py-2 w-full focus:outline-none cursor-text" />
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center">
                   <AiOutlineSearch className="h-6 w-6 fill-ternaryColor1 " />
               </div>

@@ -89,7 +89,7 @@ const Register = () => {
                     {errors.city?.type === 'required' && <span className="text-error">Required Filed</span>}
                     <div className="flex flex-row space-x-1 mr-[5%]">
                         <p className="w-[40%]">Vendedor</p>
-                        <Switch onChange={(event) => handleChange(event)} checked={checked} checkedIcon={false} uncheckedIcon={false} onColor="#758650" offColor="#758650"/>
+                        <Switch onChange={(event) => handleChange(event)} checked={checked} checkedIcon={false} uncheckedIcon={false} onColor="#A8CF54" offColor="#A8CF54"/>
                         <p className="w-[40%]">Cliente</p>
                     </div>
                     

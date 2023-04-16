@@ -10,7 +10,7 @@ import { useCart } from '../context/CartContext';
            
 //<p className="text-4xl text-border">Name</p>
 
-const SliderCard = ({ id, title, image, price, unit, name}: CardProps) => {
+const SliderCard = ({ id, title, image, price, unit, name, isProducer}: CardProps) => {
     const { addItem, items  } = useCart();
 
     const handleAddItem = () => {
@@ -46,7 +46,7 @@ const SliderCard = ({ id, title, image, price, unit, name}: CardProps) => {
                     {price}€/{unit}
                 </p>
             </div>
-            {name &&
+            {name && !isProducer &&
                 <div className="ml-2">
                     <IoMdAddCircle className="w-8 h-8 fill-orange" onClick={handleAddItem}/>
                 </div>

@@ -6,7 +6,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   },
   {
     "id": 3,
@@ -24,7 +26,7 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "category": "Frutas"
   },
   {
     "id": 4,
@@ -33,7 +35,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Ovos"
   },
   {
     "id": 5,
@@ -42,7 +45,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Ovos"
   },
   {
     "id": 6,
@@ -51,7 +55,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Legumes"
   },
   {
     "id": 7,
@@ -60,7 +65,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Legumes"
   },
   {
     "id": 8,
@@ -69,7 +75,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   },
   {
     "id": 9,
@@ -78,7 +85,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   },
   {
     "id": 10,
@@ -87,7 +95,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Legumes"
   },
   {
     "id": 11,
@@ -96,7 +105,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Ovos"
   },
   {
     "id": 12,
@@ -105,7 +115,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   },
   {
     "id": 13,
@@ -114,7 +125,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Legumes"
   },
   {
     "id": 14,
@@ -123,7 +135,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   },
   {
     "id": 15,
@@ -132,7 +145,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   },
   {
     "id": 16,
@@ -141,7 +155,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   },
   {
     "id": 17,
@@ -150,7 +165,8 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   },
   {
     "id": 18,
@@ -159,6 +175,7 @@
     "price": 1.99,
     "producer_name": "Arménio",
     "unit": "KG",
-    "name": "Arménio"
+    "name": "Arménio",
+    "category": "Frutas"
   }
 ]

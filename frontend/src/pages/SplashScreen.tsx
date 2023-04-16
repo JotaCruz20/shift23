@@ -9,7 +9,7 @@ const SplashScreen = () => {
 
   React.useEffect(() => {
     if (myRef.current) {
-      myRef.current.style.backgroundColor = '#22C55E';
+      myRef.current.style.backgroundColor = '#A8CF54';
       myRef.current.style.transition = 'background-color 3s linear';
       myRef.current.style.height = '100vh';
 

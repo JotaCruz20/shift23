@@ -9,6 +9,8 @@ import Register from "../pages/Register"
 import HomeScreen from "../pages/HomeScreen"
 import WhiteLayout from "../layouts/WhiteLayout"
 import Cart from "../pages/Cart"
+import AfterRequest from "../pages/AfterRequest"
+import VendorHome from "../pages/VendorHome"
 
 
 interface IRoutes  {
@@ -54,6 +56,24 @@ const Routes: IRoutes[] = [
         layout: MainLayout,
         component: Cart,
         protected: false //TODO: MUDAR PARA TRUE
+    },
+    {
+        path: "/after-request",
+        layout: WhiteLayout,
+        component: AfterRequest,
+        protected: false //TODO: MUDAR PARA TRUE
+    },
+    {
+        path: "/home-vendor",
+        layout: MainLayout,
+        component: VendorHome,
+        protected: false //TODO: MUDAR PARA TRUE
+    },
+    {
+        path: "*",
+        layout: MainLayout,
+        component: SplashScreen,
+        protected: false
     }
 ]
 

@@ -6,9 +6,9 @@ import SliderCard from "./SliderCard";
  
 const ProdGrid = ({list}: ProdGridProps) => {
     return (
-        <div className="grid grid-cols-4">
-            {list.map((item) => (
-                <div >
+        <div className="grid grid-cols-3">
+            {list.map((item, index) => (
+                <div key={index}>
                 <SliderCard
                     id={item.id}
                     name={item.name}
@@ -16,6 +16,7 @@ const ProdGrid = ({list}: ProdGridProps) => {
                     unit={item.unit}
                     image={item.image}
                     title={item.title}
+                    isProducer={true}
                 />
                 </div>
             ))}

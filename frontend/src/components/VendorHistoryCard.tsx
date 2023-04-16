@@ -9,8 +9,8 @@ import VendorHistorySlider from "./VendorHistorySlider";
 
 const VendorHistoryCard = ({customer,status, total , products, order_nr}: VendorHistoryCardProps) => {
     return(
-    <div className="flex w-screen justify-center">
-        <div className="flex flex-col items-center w-4/5 h-[250px] border-grey border-4 rounded-lg">
+    <div className="flex justify-center">
+        <div className="flex flex-col mr-2 items-center w-[90%] h-[250px] border-white shadow-lg border-4 rounded-lg">
             <div className="flex flex-row justify-between w-full">
                 <div className="flex flex-col p-2">
                     <p>{customer}</p>

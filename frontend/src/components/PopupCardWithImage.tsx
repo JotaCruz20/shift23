@@ -8,11 +8,11 @@ const PopupCardWithImage = ({ children, image, name, city }: IPopUpCardWithImage
 
     return (
     <div className='absolute bottom-0 w-full'>
-        <div className=" bg-white rounded-tr-3xl rounded-tl-3xl shadow-2xl flex items-center border-b-2 border-b-grey">
+        <div className=" bg-white rounded-tr-3xl rounded-tl-3xl shadow-2xl flex items-center border-b-2 border-b-grey max-h-screen">
             <div className="ml-4 pt-4 relative items-start">
                 <div className="flex flex-row w-screen">
                 <img
-                    className="absolute rounded-full -top-12 w-[100px] h-[100px] object-cover"
+                    className="absolute rounded-full -top-12 w-[100px] h-70v object-cover"
                     src={image}
                     alt="test"
                 />
@@ -27,8 +27,8 @@ const PopupCardWithImage = ({ children, image, name, city }: IPopUpCardWithImage
                 </div>
             </div>
         </div>
-        <div className='bg-white'>
-            <div className='ml-4'>
+        <div className='bg-white ]'>
+            <div className='ml-4 max-h-[73vh] overflow-y-auto'>
                 {children}
             </div>
         </div>

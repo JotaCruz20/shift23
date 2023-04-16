@@ -9,7 +9,7 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 
 import { Navigation, Pagination } from "swiper";
-import VendorHistorySliderCard from "./VendorHistorySlideCard";
+import SliderCardCart from "./SliderCartCard";
 
 const VenderHistorySlider = ({products}: VendorHistorySliderProps) => {
     return (
@@ -27,9 +27,11 @@ const VenderHistorySlider = ({products}: VendorHistorySliderProps) => {
                     return(
                         <SwiperSlide key={index}>
                             <div className="py-2">
-                                <VendorHistorySliderCard
+                                <SliderCardCart
+                                    id={item.id}
                                     image={item.image}
-                                    weight={item.weight}
+                                    quantity={item.quantity}
+                                    unit={item.unit}
                                 />
                             </div>
                         </SwiperSlide>

@@ -10,7 +10,7 @@ import { useCart } from '../context/CartContext';
            
 //<p className="text-4xl text-border">Name</p>
 
-const SliderCardCart = ({ image, quantity, unit}: SlideCardProps) => {
+const SliderCardCart = ({ id, image, quantity, unit}: SlideCardProps) => {
 
     return(
         <div className='flex h-[80%] w-[95%] flex-col bg-white rounded-lg mt-2'>
