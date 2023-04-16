@@ -1,7 +1,7 @@
 import React from "react";
 import VendorRequestLayout from "../components/VendorRequestLayout";
 import PopupCardWithImage from "../components/PopupCardWithImage";
-import AdvertisementLayout from "../components/VendorAdvertisementLayout";
+import VendorAdvertisementLayout from "../components/VendorAdvertisementLayout";
 import VendorOptions from "../components/VendorOptions";
 
 
@@ -19,7 +19,7 @@ const VendorHome = ({}) =>{
       <div className="flex justify-center p-2">
                 <VendorOptions/>
             </div>
-            <AdvertisementLayout/>
+            <VendorAdvertisementLayout/>
            </PopupCardWithImage>
         </div>
     )
