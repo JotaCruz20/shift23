@@ -6,11 +6,20 @@ import SliderCard from "./SliderCard";
  
 const ProdGrid = ({list}: ProdGridProps) => {
     return (
-        <div className="grid grid-rows-2 overflow-y-auto">
-            {
-            list.map((item) => <SliderCard id={item.id} name={item.name} price={item.price} unit={item.unit} image={item.image} title={item.image}/>)
-            }
-        </div>
+        <div className="grid grid-cols-4 overflow-y-scroll h-80">
+            {list.map((item) => (
+                <div >
+                <SliderCard
+                    id={item.id}
+                    name={item.name}
+                    price={item.price}
+                    unit={item.unit}
+                    image={item.image}
+                    title={item.title}
+                />
+                </div>
+            ))}
+            </div>
     )
 }
 

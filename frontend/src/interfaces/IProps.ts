@@ -79,3 +79,17 @@ export interface ProdGridProps{
 export interface ProdTypeButtonProps{
     name:string
 }
+
+export interface ISliderProps{
+    items: any[]
+}
+export interface ICartProviderProps {
+    children: React.ReactNode
+}
+export interface CartContextProps {
+    state: CartState;
+    addItem: (item: CartItem) => void
+    removeItem: (itemId: string) => void
+    updateQuantity: (itemId: string, quantity: number) => void
+    items: CartItem[]
+}

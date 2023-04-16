@@ -34,5 +34,50 @@
     "producer_name": "Arménio",
     "unit": "KG",
     "name": "Arménio"
+  },
+  {
+    "id": 5,
+    "title": "Banana",
+    "image": "http://clipart-library.com/image_gallery2/Banana.png",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG",
+    "name": "Arménio"
+  },
+  {
+    "id": 6,
+    "title": "Banana",
+    "image": "http://clipart-library.com/image_gallery2/Banana.png",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG",
+    "name": "Arménio"
+  },
+  {
+    "id": 7,
+    "title": "Banana",
+    "image": "http://clipart-library.com/image_gallery2/Banana.png",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG",
+    "name": "Arménio"
+  },
+  {
+    "id": 8,
+    "title": "Banana",
+    "image": "http://clipart-library.com/image_gallery2/Banana.png",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG",
+    "name": "Arménio"
+  },
+  {
+    "id": 9,
+    "title": "Banana",
+    "image": "http://clipart-library.com/image_gallery2/Banana.png",
+    "price": 1.99,
+    "producer_name": "Arménio",
+    "unit": "KG",
+    "name": "Arménio"
   }
 ]

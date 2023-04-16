@@ -7,6 +7,7 @@ import BackButton from "../components/BackButton";
 import { AiOutlineSearch } from "react-icons/ai";
 import ProdTypeList from "../components/ProdTypeList";
 import ProdGrid from "../components/ProdGrid";
+import products from "../data/products.json"
 
 const ProducerPage = ({name}: ProducerPageProps) => {
     return(
@@ -25,7 +26,7 @@ const ProducerPage = ({name}: ProducerPageProps) => {
             </div>
 
             <ProdTypeList list={['Legumes', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos', 'Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos','Frutas', 'Ovos']}/>
-            <ProdGrid list={[{title:'Banana'}]} />
+            <ProdGrid list={products} />
 
 
             </PopupCardWithImage>
