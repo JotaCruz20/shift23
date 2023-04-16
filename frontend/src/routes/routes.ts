@@ -8,6 +8,7 @@ import WelcomeScreen from "../pages/WelcomeScreen"
 import Register from "../pages/Register"
 import HomeScreen from "../pages/HomeScreen"
 import WhiteLayout from "../layouts/WhiteLayout"
+import Cart from "../pages/Cart"
 
 
 interface IRoutes  {
@@ -46,6 +47,12 @@ const Routes: IRoutes[] = [
         path: "/home",
         layout: WhiteLayout,
         component: HomeScreen,
+        protected: false //TODO: MUDAR PARA TRUE
+    },
+    {
+        path: "/cart",
+        layout: MainLayout,
+        component: Cart,
         protected: false //TODO: MUDAR PARA TRUE
     }
 ]

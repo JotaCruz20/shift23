@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import {useNavigate} from 'react-router-dom';
+
 import { HiLocationMarker } from "react-icons/hi"
 import { BsFillPersonFill } from "react-icons/bs";
 import { RiShoppingBasketLine } from "react-icons/ri"
@@ -12,6 +14,8 @@ import Slider from "../components/Slider";
 const HomeScreen = () => {
 
   const [searchInput, setSearchInput] = useState<string>("")
+
+  const navigate = useNavigate();
   
   const [allProducts, setAllProducts] = useState<any>(products)
   const [allProducers, setAllProducers] = useState<any>(producers)
@@ -62,7 +66,7 @@ const HomeScreen = () => {
         </div>
         <p className="text-[20px]">Bem Vindo de Volta</p>
         <div className="flex flex-col mr-8 items-center">
-          <div className="flex rounded-full items-center justify-center h-7 w-7 bg-orange">
+          <div className="flex rounded-full items-center justify-center h-7 w-7 bg-orange" onClick={() => navigate("/cart")}>
             <RiShoppingBasketLine className="mb-[3px] h-6 w-6"/>
           </div>
           <p className="text-[12px] ">Cesto</p>

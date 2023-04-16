@@ -1,5 +1,5 @@
 import internal from "stream"
-import { CartItem, CartState } from "./IContext"
+import { Action, CartItem, CartState } from "./IContext"
 
 export interface MainProps{
     children: React.ReactNode
@@ -31,6 +31,13 @@ export interface CardProps{
     price: number
     unit: string
     name?: string
+}
+
+export interface SlideCardProps{
+    id: number
+    image: string
+    unit: string
+    quantity: number
 }
 
 export interface ProdInfoProps{
@@ -72,11 +79,12 @@ export interface ISliderProps{
 
 export interface CartContextProps {
     state: CartState;
-    addItem: (item: CartItem) => void
-    removeItem: (itemId: string) => void
-    updateQuantity: (itemId: string, quantity: number) => void
-    items: CartItem[]
-}
+    addItem: (item: CartItem) => void;
+    removeItem: (itemId: string) => void;
+    updateQuantity: (itemId: string, quantity: number) => void;
+    items: CartItem[];
+    dispatch: React.Dispatch<Action>;
+  }
 
 export interface ICartProviderProps {
     children: React.ReactNode

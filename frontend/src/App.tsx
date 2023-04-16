@@ -1,17 +1,34 @@
-import React, { Suspense} from 'react'
+import React, { Suspense, useContext, useEffect, useState} from 'react'
 import logo from './logo.svg';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { ProtectedRoute } from './middleware/ProtectedRoute'
 
-import { CartProvider } from './context/CartContext';
+import { CartProvider, CartContext  } from './context/CartContext';
 
 import routes from './routes/routes'
 
 import './assets/css/tailwind.scss'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const { dispatch } = useContext(CartContext); // Import dispatch from CartContext
+  
+
+  useEffect(() => {
+    const cartData = localStorage.getItem('cart');
+    if (cartData) {
+      const items = JSON.parse(cartData);
+      dispatch({ type: 'SET_ITEMS', payload: items });
+    }
+    setIsLoading(false); // <-- add this line
+  }, []);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  
   return (
     <CartProvider>
       <div className="App">

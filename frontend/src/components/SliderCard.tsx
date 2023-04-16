@@ -20,7 +20,8 @@ const SliderCard = ({ id, title, image, price, unit, name}: CardProps) => {
             image,
             price,
             quantity: 1,
-            unit
+            unit,
+            producerName: name!
         });
 
     };
