@@ -1,4 +1,5 @@
 import internal from "stream"
+import { CartItem, CartState } from "./IContext"
 
 export interface MainProps{
     children: React.ReactNode
@@ -24,6 +25,7 @@ export interface PropsButton{
 }
 
 export interface CardProps{
+    id: number
     title: string
     image: string
     price: number
