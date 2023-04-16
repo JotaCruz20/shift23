@@ -18,7 +18,7 @@ const VendorNewLayout = () => {
                 <input type="file" className="text-sm text-white px-24
                 file:mr-5 file:py-2 file:px-6
                 file:rounded-full file:border-0
-                file:text-sm  file:text-green2
+                file:text-sm  file:text-white
                 hover:file:cursor-pointer" {...register("image", { required: true })} />
 
                 <p className="mt-6">Adicione o nome do produto</p>
