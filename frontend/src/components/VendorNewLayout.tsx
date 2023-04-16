@@ -33,7 +33,7 @@ const VendorNewLayout = () => {
                 </select>
 
                 <p className="mt-6">Preço</p>
-                <input type="number" placeholder="ex: 1,19€" className="bg-grey shadow-lg rounded-xl pr-4 px-2 py-2 w-[69%] focus:outline-none cursor-text" {...register("price", { required: true })} />
+                <input type="number" placeholder="ex: 1,19€" className="bg-grey shadow-lg rounded-xl pr-4 px-2 py-2 w-[69%] focus:outline-none cursor-text" {...register("value", { required: true })} />
 
                 <p className="mt-6">Unidade</p>
                 <select className="bg-grey shadow-lg rounded-xl pr-4 py-2 w-[69%]  px-2 focus:outline-none cursor-text mb-8 " {...register("unit", { required: true })}>

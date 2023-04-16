@@ -14,7 +14,7 @@ const AfterRequest = ({id}: IAfterRequestProps) => {
             <img src={Complete} alt="Logo" />
             <h1 className='text-3xl font-bold my-4'>Parabéns!</h1>
             <p className='text-lg text-center mb-4'>O seu pedido foi registrado e está em processamento.</p>
-            <Button title="Ver Pedido" onClick={() => {}} type='button' disabled={false}/>
+            <Button title="Ver Pedido" onClick={() => {navigate('/request/1')}} type='button' disabled={false}/>
             <Button title="Continuar a Comprar" onClick={() => {navigate('/home')}} type='button' disabled={false} white={true}/>
         </div>
     );

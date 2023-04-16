@@ -11,6 +11,8 @@ import SliderCart from "../components/SliderCart";
 import { IoMdTrash } from "react-icons/io";
 import Button from "../components/Button";
 
+import { api } from "../util/api";
+
 const Cart = () => {
     const { removeItem } = useCart();
     const navigator = useNavigate();
@@ -22,7 +24,7 @@ const Cart = () => {
 
     // group items by producer name and inside of each producer group, group by id
     const groupedItems = itemsArray.reduce((acc: any, item: any) => {
-        const producer = acc.find((i: any) => i[0].producer === item.producer);
+        const producer = acc.find((i: any) => i[0].producerName === item.producerName);
         if (producer) {
             producer.push(item);
         } else {
@@ -34,16 +36,21 @@ const Cart = () => {
     function calculateTotal(item:any[]) {
         let total = 0
         item.forEach((item) => {
-            total += item.quantity * item.price 
+            total += item.quantity * item.value 
         })
         return total
     }
 
     function makeOrder(item:any[]) {
+        let send: any[] = []
         for(let i = 0; i < item.length; i++) {
+            send.push({id: item[i].id, quantity: item[i].quantity, user:2})
             removeItem(item[i].id)
         }
-        //TODO: send order to backend
+        console.log(item)
+
+        api.post('cart', {order: send})
+        
         navigator('/after-request')
     }
 
@@ -58,6 +65,7 @@ const Cart = () => {
             </div>
             
             <PopupCard>
+                <div className="h-[90%]">
                     {groupedItems.map((item: any, index:number) => (
                         <div key={index} className="bg-white rounded-lg border-white shadow-md w-[95%] mb-2">
                             <div className="flex flex-row justify-between">
@@ -72,7 +80,7 @@ const Cart = () => {
                             <SliderCart key={index} items={item}/>
                             <div className="flex flex-row justify-between items-center">
                                 <div>
-                                <h1 className="ml-2 font-bold">Total: {calculateTotal(item)}€</h1>
+                                <h1 className="ml-2 font-bold">Total: {Math.round(calculateTotal(item) * 100) / 100}€</h1>
                                 </div>
                                 <div className="w-[100px]">
                                     <Button title="Pedido" onClick={() => makeOrder(item)} type="button" disabled={false}/>
@@ -82,7 +90,7 @@ const Cart = () => {
                         </div>
                         
                     ))}
-                
+                </div>
             </PopupCard>
         </div>
     );

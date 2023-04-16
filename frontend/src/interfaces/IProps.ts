@@ -29,7 +29,7 @@ export interface CardProps{
     id: number
     title: string
     image: string
-    price: number
+    value: number
     unit: string
     name?: string
     isProducer?: boolean
@@ -42,32 +42,24 @@ export interface SlideCardProps{
     quantity: number
 }
 
-export interface ProdInfoProps{
-    title: string
-    price: number
-    weight: number 
-    producerName: string
-    producerImage: string
-    productImage: string
-    unit: string
-}
+
 
 export interface ProdTopProps{
     image: string
 }
 export interface ProdBottomProps{
+    id: number
+    image: string
     title: string
     unit: string
-    price: number
-    weight: number
+    value: number
     producerName: string
     producerImage: string
 }
 
 export interface ProdUnitProps{
-    weight: number
     unit: string
-    price: number
+    value: number
 }
 
 export interface ProducerInfoProps{
@@ -75,7 +67,7 @@ export interface ProducerInfoProps{
     name: string
 }
 export interface ProducerPageProps{
-    name: string
+    id: string
 }
 
 export interface ProdTypeListProp{

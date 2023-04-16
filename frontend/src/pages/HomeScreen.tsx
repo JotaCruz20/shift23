@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import {useNavigate} from 'react-router-dom';
 
@@ -11,17 +11,42 @@ import products from "../data/products.json"
 import producers from "../data/producers.json"
 import Slider from "../components/Slider";
 
+import { api } from "../util/api"
+
 const HomeScreen = () => {
 
   const [searchInput, setSearchInput] = useState<string>("")
 
   const navigate = useNavigate();
   
-  const [allProducts, setAllProducts] = useState<any>(products)
-  const [allProducers, setAllProducers] = useState<any>(producers)
+  const [allProducts, setAllProducts] = useState<any>([])
+  const [allProducers, setAllProducers] = useState<any>([])
 
-  const [productsToShow, setProductsToShow] = useState<any>(products)
-  const [producersToShow, setProducersToShow] = useState<any>(producers)
+  const [productsToShow, setProductsToShow] = useState<any>([])
+  const [producersToShow, setProducersToShow] = useState<any>([])
+
+  //make a api request to get the products and producers
+  useEffect(() => {
+    api.get("customer/2/sellers")
+    .then((response) => {
+      console.log(response)
+      setAllProducers(response)
+      setProducersToShow(response)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+
+    api.get("customer/2/sales")
+      .then((response) => {
+        setAllProducts(response)
+        setProductsToShow(response)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }, [])
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault()
@@ -30,12 +55,12 @@ const HomeScreen = () => {
     if (e.target.value.length > 0) {
         const searchWords = e.target.value.toLowerCase().split(" ")
 
-        setProducersToShow(producers.filter((producer: any) => {
+        setProducersToShow(allProducers.filter((producer: any) => {
             const producerName = producer.title.toLowerCase()
             return searchWords.every((word: string) => producerName.includes(word))
         }))
 
-        setProductsToShow(products.filter((product: any) => {
+        setProductsToShow(allProducts.filter((product: any) => {
             const productName = product.title.toLowerCase()
             return searchWords.every((word: string) => productName.includes(word))
         }))
@@ -90,7 +115,7 @@ const HomeScreen = () => {
           <div className="h-[3px] w-[120px] ml-[20px] bg-green1"/>
         </div>
 
-        <Slider items={producers}/>
+        <Slider items={producersToShow}/>
       </div>
       }
 
@@ -101,7 +126,7 @@ const HomeScreen = () => {
           <div className="h-[3px] w-[80px] ml-[20px] bg-green1"/>
         </div>
 
-        <Slider items={products}/>
+        <Slider items={productsToShow}/>
       </div>
       }
 

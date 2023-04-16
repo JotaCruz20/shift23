@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import BackButton from "./BackButton";
 
 import { ProdTopProps } from '../interfaces/IProps'
 
 const ProdTop = ({image} : ProdTopProps) => {
+
     return(
         <div className="fixed top-5 left-5 z-10">
            <BackButton />

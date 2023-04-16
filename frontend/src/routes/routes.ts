@@ -11,6 +11,9 @@ import WhiteLayout from "../layouts/WhiteLayout"
 import Cart from "../pages/Cart"
 import AfterRequest from "../pages/AfterRequest"
 import VendorHome from "../pages/VendorHome"
+import RequestInfo from "../pages/RequestInfo"
+import ProducerPage from "../pages/ProducerPage"
+import ProdPage from "../pages/ProdInfo"
 
 
 interface IRoutes  {
@@ -64,9 +67,27 @@ const Routes: IRoutes[] = [
         protected: false //TODO: MUDAR PARA TRUE
     },
     {
-        path: "/home-vendor",
+        path: "/home-seller",
         layout: MainLayout,
         component: VendorHome,
+        protected: false //TODO: MUDAR PARA TRUE
+    },
+    {
+        path: "/request/:id",
+        layout: MainLayout,
+        component: RequestInfo,
+        protected: false //TODO: MUDAR PARA TRUE
+    },
+    {
+        path: "/producer/:id",
+        layout: MainLayout,
+        component: ProducerPage,
+        protected: false //TODO: MUDAR PARA TRUE
+    },
+    {
+        path: "/product/:id",
+        layout: MainLayout,
+        component: ProdPage,
         protected: false //TODO: MUDAR PARA TRUE
     },
     {

@@ -10,13 +10,14 @@ interface IFetchOptions {
   
 async function fetcher(url: string, options: IFetchOptions = {}): Promise<any> {
 
-    const token = getCookie('accessToken')
+    //const token = getCookie('accessToken')
 
     const requestOptions: RequestInit = {
         method: options.method || 'GET',
         headers: {
+            'Access-Control-Allow-Origin': 'http://localhost:3000',
             'Content-Type': 'application/json',
-            ...(token ? { Authorization: `Bearer ${token}` } : {})
+            //...(token ? { Authorization: `Bearer ${token}` } : {})
         },
     }
 
@@ -26,40 +27,9 @@ async function fetcher(url: string, options: IFetchOptions = {}): Promise<any> {
 
     console.log(config)
 
-    const response = await fetch(`${config.apiURL.api}/${url}` , requestOptions)
+    const response = await fetch(`${config.apiURL.api}${url}` , requestOptions)
 
     const data = await response.json()
-
-    //Caso a token tenha expirado, vamos obter uma nova token e tentar novamente o pedido, se o pedido de refresh falhar, vamos dar logout
-    if(response.status === 403 && data["details"]==="Invalid/Expired Access Token. Permission Denied.") {
-        const refreshToken = getCookie('refreshToken')
-
-        const requestOptions: RequestInit = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({refreshToken: refreshToken})
-        }
-
-
-
-        const response = await fetch(`${config.apiURL.api}/${url}` , requestOptions)
-        const data = await response.json()
-
-        if(response.status === 200) {
-
-            const accessToken = data["accessToken"]
-            const refreshToken = data["refreshToken"]
-
-            setCookie('accessToken', accessToken)
-            setCookie('refreshToken', refreshToken)
-            return fetcher(url, options)
-        }
-        else{
-            return undefined
-        }
-    }
 
     if (!response.ok) {
         console.log(new Error(`HTTP error! status: ${response.status}`))

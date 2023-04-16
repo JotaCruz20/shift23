@@ -3,8 +3,7 @@
     "id": 1,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"
@@ -13,8 +12,7 @@
     "id": 2,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"
@@ -23,8 +21,7 @@
     "id": 3,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "category": "Frutas"
   },
@@ -32,8 +29,7 @@
     "id": 4,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Ovos"
@@ -42,8 +38,7 @@
     "id": 5,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Ovos"
@@ -52,8 +47,7 @@
     "id": 6,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Legumes"
@@ -62,8 +56,7 @@
     "id": 7,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Legumes"
@@ -72,8 +65,7 @@
     "id": 8,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"
@@ -82,8 +74,7 @@
     "id": 9,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"
@@ -92,8 +83,7 @@
     "id": 10,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Legumes"
@@ -102,8 +92,7 @@
     "id": 11,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Ovos"
@@ -112,8 +101,7 @@
     "id": 12,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"
@@ -122,8 +110,7 @@
     "id": 13,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Legumes"
@@ -132,8 +119,7 @@
     "id": 14,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"
@@ -142,8 +128,7 @@
     "id": 15,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"
@@ -152,8 +137,7 @@
     "id": 16,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"
@@ -162,8 +146,7 @@
     "id": 17,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"
@@ -172,8 +155,7 @@
     "id": 18,
     "title": "Banana",
     "image": "http://clipart-library.com/image_gallery2/Banana.png",
-    "price": 1.99,
-    "producer_name": "Arménio",
+    "value": 1.99,
     "unit": "KG",
     "name": "Arménio",
     "category": "Frutas"

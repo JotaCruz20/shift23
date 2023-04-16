@@ -12,7 +12,7 @@ const ProdGrid = ({list}: ProdGridProps) => {
                 <SliderCard
                     id={item.id}
                     name={item.name}
-                    price={item.price}
+                    value={item.value}
                     unit={item.unit}
                     image={item.image}
                     title={item.title}

@@ -21,8 +21,11 @@ const Register = () => {
     const onSubmitNew = (data: IRegister) => {
         console.log(data)
         //TODO: FAZER POST PARA A API
-
-        navigate("/main")
+        if(!checked){
+            navigate("/home-seller")
+        }else{
+            navigate("/home")
+        }
     }
 
     const handleChange = (checked: boolean) => {
@@ -32,7 +35,7 @@ const Register = () => {
     return (
         <PopupCard>
             <h1 className="text-center font-bold text-[20px] mb-2">REGISTO</h1>
-            <form className="flex flex-col space-y-4 items-center mb-4"onSubmit={handleSubmit(onSubmitNew )}>
+            <form className="flex flex-col space-y-4 items-center mb-4" onSubmit={handleSubmit(onSubmitNew )}>
                     <input
                         className={`w-[80%] h-[50px] shadow-lg rounded-lg bg-grey outline-none  pl-2 ${errors.name ? 'border-error' : 'border-background'}`}
                         type="text"
@@ -93,7 +96,7 @@ const Register = () => {
                         <p className="w-[40%]">Cliente</p>
                     </div>
                     
-                    <Button title="Register" onClick={() => navigate("/register")} type="button" disabled={false} />
+                    <Button title="Register" onClick={() => console.log("clicked")} type="submit" disabled={false} />
             </form>
         </PopupCard>
     )

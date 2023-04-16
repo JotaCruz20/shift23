@@ -14,7 +14,7 @@ const Slider = ({items}: ISliderProps) => {
     return (
         <>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={2}
                 spaceBetween={5}
                 loop={false} 
                 pagination={false}
@@ -30,7 +30,7 @@ const Slider = ({items}: ISliderProps) => {
                                     id={item.id}
                                     title={item.title}
                                     unit={item.unit}
-                                    price={item.price}
+                                    value={item.value}
                                     image={item.image}
                                     name={item.name}
                                 />

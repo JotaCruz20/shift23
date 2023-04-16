@@ -5,12 +5,14 @@ import {IoMdAddCircle} from "react-icons/io"
 import { CardProps } from '../interfaces/IProps'
 
 import { useCart } from '../context/CartContext';
-//
-// 
+
+//import navigator
+import { useNavigate } from 'react-router-dom'
            
 //<p className="text-4xl text-border">Name</p>
 
-const SliderCard = ({ id, title, image, price, unit, name, isProducer}: CardProps) => {
+const SliderCard = ({ id, title, image, value, unit, name, isProducer}: CardProps) => {
+    const navigate = useNavigate();
     const { addItem, items  } = useCart();
 
     const handleAddItem = () => {
@@ -18,7 +20,7 @@ const SliderCard = ({ id, title, image, price, unit, name, isProducer}: CardProp
             id,
             title,
             image,
-            price,
+            value,
             quantity: 1,
             unit,
             producerName: name!
@@ -26,12 +28,22 @@ const SliderCard = ({ id, title, image, price, unit, name, isProducer}: CardProp
 
     };
 
+    function redirect() {
+        if(!name){
+            navigate(`/producer/${id}`)
+        }
+        else{
+            navigate(`/product/${id}`)
+        }
+        
+    }
+
     return(
         <div className='flex h-[90%] w-[95%] flex-col bg-white rounded-lg mt-2 border-2 border-white shadow-md'>
     <div className="flex justify-center">
-        <img className="rounded-full -top-12 w-20 h-20 object-cover mt-2" src={image} alt="test" />
+        <img className="rounded-full -top-12 w-20 h-20 object-cover mt-2" src={image} alt="test" onClick={() => redirect()}/>
     </div>
-    <div className="flex flex-col">
+    <div className="flex flex-col" >
         <p className="px-4 text-left font-bold"> 
             {title}
         </p> 
@@ -43,11 +55,11 @@ const SliderCard = ({ id, title, image, price, unit, name, isProducer}: CardProp
                     </p>
                 }
                 <p className="-mt-1 text-left text-[14px] text-green1 ">
-                    {price}€/{unit}
+                    {value} {name? "€/" :""} {unit}
                 </p>
             </div>
             {name && !isProducer &&
-                <div className="ml-2">
+                <div className="ml-[55px]">
                     <IoMdAddCircle className="w-8 h-8 fill-orange" onClick={handleAddItem}/>
                 </div>
             }               

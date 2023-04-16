@@ -14,135 +14,52 @@
                 "unit": "kg"
             },
             {
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 2,
+                "name": "Kiwi",
+                "image": "https://images.unsplash.com/photo-1585059895524-72359e06133a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+                "quantity": 5,
                 "unit": "kg"
             },
             {
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
+                "name": "Eggs",
+                "image": "https://bakerpedia.com/wp-content/uploads/2020/03/Egg_baking-ingredients-e1584136402126-400x400.jpg",
                 "quantity": 3,
                 "unit": "kg"
-            },
-            {
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 4,
-                "unit": "kg"
             }
-
         ]
 
     },
     {
         "id":3,
         "status": "Por recolher",
-        "customer": "Sonia Silva",
-        "total": 11.71,
-        "order_nr": 1,
-        "day": "Hoje",
+        "customer": "Ana Gilde",
+        "total": 23.5,
+        "order_nr": 2,
+        "day": "Semana Passada",
         "prod_list": [
             {
                 "id": 1,
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
+                "name": "Maçã",
+                "image": "https://quintavilar.pt/wp-content/uploads/2021/10/macas_0004_mac%CC%A7a%CC%83-fuji.png",
                 "quantity": 1,
                 "unit": "kg"
             },
             {
                 "id": 2,
-                "name": "Banana",
+                "name": "Perâ",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
                 "quantity": 2,
                 "unit": "kg"
             },
             {
                 "id": 3,
-                "name": "Banana",
+                "name": "Abacaxi",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
                 "quantity": 3,
                 "unit": "kg"
             },
             {
                 "id": 4,
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 4,
-                "unit": "kg"
-            }
-
-        ]
-
-    },
-    {
-        "id":2,
-        "status": "Por recolher",
-        "customer": "Sonia Silva",
-        "total": 11.71,
-        "order_nr": 1,
-        "day": "Hoje",
-        "prod_list": [
-            {
-                "id": 1,
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 1,
-                "unit": "kg"
-            },
-            {
-                "id": 2,
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 2,
-                "unit": "kg"
-            },
-            {
-                "id": 3,
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 3,
-                "unit": "kg"
-            },
-            {
-                "id": 4,
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 4,
-                "unit": "kg"
-            }
-
-        ]
-
-    },
-    {
-        "id":4,
-        "status": "Por recolher",
-        "customer": "Sonia Silva",
-        "total": 11.71,
-        "order_nr": 1,
-        "day": "Hoje",
-        "prod_list": [
-            {
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 1,
-                "unit": "kg"
-            },
-            {
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 2,
-                "unit": "kg"
-            },
-            {
-                "name": "Banana",
-                "image": "http://clipart-library.com/image_gallery2/Banana.png",
-                "quantity": 3,
-                "unit": "kg"
-            },
-            {
-                "name": "Banana",
+                "name": "Coco",
                 "image": "http://clipart-library.com/image_gallery2/Banana.png",
                 "quantity": 4,
                 "unit": "kg"
